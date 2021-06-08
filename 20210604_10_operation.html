@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Действия с operation.</title>
+</head>
+
+<body>
+    <script>
+        x = +prompt("Введите первое число ");
+        y = +prompt("Введите второе число");
+        oper = prompt("Введите знак +, -, * или /");
+
+        function mathOperation(x, y, oper) {
+            switch (oper) {
+                case "+":
+                    alert(sum(x, y));
+                    break;
+                case "-":
+                    alert(dif(x, y));
+                    break;
+                case "*":
+                    alert(multi(x, y));
+                    break;
+                case "/":
+                    alert(div(x, y));
+                    break;
+                default:
+                    alert("Введен неверный знак");
+                    break;
+            }
+        }
+        mathOperation(x, y, oper)
+    </script>
+</body>
+
+</html>

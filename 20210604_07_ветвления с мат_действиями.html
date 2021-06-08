@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчеты.</title>
+</head>
+
+<body>
+    <script>
+        var a, b; //Задаем переменные a и b
+        a = parseInt(prompt("Введите значение переменной а"));
+        b = parseInt(prompt("Введите значение переменной b"));
+
+        if (a >= 0 && b >= 0) {
+            alert("Обе переменные положительные. Тогда выводим их разность: " + (a - b));
+        }
+        else if (a < 0 && b < 0) {
+            alert("Обе переменные отрицательные. Тогда выводим их произведение: " + (a * b));
+        }
+        else {
+            alert("Переменные с разными знаками! Выводим сумму: " + (a + b));
+        }
+    </script>
+</body>
+
+</html>
